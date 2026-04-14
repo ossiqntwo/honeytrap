@@ -152,7 +152,7 @@ Misuse may violate local and international laws.
 
 👤 Developer
 🌐 Website: https://ossiqn.com.tr
-🐙 GitHub: https://github.com/ossiqn
+🐙 GitHub: https://github.com/ossiqntwo
 📜 License
 
 MIT License — © 2024 ossiqn
