@@ -1,38 +1,47 @@
-🍯 HoneyTrap Network
+# 🍯 HoneyTrap Network
+### Advanced Honeypot & Threat Intelligence System  
+**Developed & Maintained by ossiqn**
 
-Advanced Honeypot & Threat Intelligence System
-Developed & Maintained by ossiqn
+---
 
-🔍 What is HoneyTrap Network?
+## 🔍 What is HoneyTrap Network?
 
 HoneyTrap Network is a fully automated honeypot system that:
 
-Lures attackers into fake services
-Captures everything they do
-Reports activity in real time
+- Lures attackers into fake services  
+- Captures everything they do  
+- Reports activity in real time  
 
 All data is visualized through a sleek dark-themed web dashboard and sent instantly via Discord and Telegram.
 
-Deploy it → Watch attackers walk in → Collect intelligence automatically
+> **Deploy it → Watch attackers walk in → Collect intelligence automatically**
 
-✨ Features
-Feature	Description
-🌐 HTTP Trap	Fake APIs, admin panels, .env, phpMyAdmin, WordPress login, GraphQL
-🔐 SSH Trap	Captures brute-force attempts and executed commands
-📁 FTP Trap	Fake files, credential logging, download tracking
-🔌 TCP Trap	Emulates MySQL, PostgreSQL, Redis, MongoDB, Elasticsearch, Jupyter
-🌍 GeoIP	Real-time attacker location (country, city, ISP, ASN)
-🧬 IOC Export	Automatically generates IOC lists
-🗺️ Attack Map	Visual global attack tracking
-🔥 Threat Score	Automatic scoring based on attacker behavior
-🚫 Auto Blacklist	Blocks high-risk IPs automatically
-💬 Discord Alerts	Real-time webhook notifications
-📱 Telegram Alerts	Instant bot alerts
-🖥️ Web Dashboard	Live terminal-style UI with CRT effect
-🐳 Docker Ready	One-command deployment
-📊 SQLite DB	Local storage of attacks and sessions
-🚀 Quick Start
-🐳 Docker (Recommended)
+---
+
+## ✨ Features
+
+- 🌐 **HTTP Trap** — Fake APIs, admin panels, `.env`, phpMyAdmin, WordPress, GraphQL  
+- 🔐 **SSH Trap** — Captures brute-force attempts and executed commands  
+- 📁 **FTP Trap** — Logs credentials and file downloads  
+- 🔌 **TCP Trap** — Emulates DBs and services (MySQL, Redis, MongoDB, etc.)  
+- 🌍 **GeoIP** — Real-time attacker geolocation  
+- 🧬 **IOC Export** — Auto-generates IOC lists  
+- 🗺️ **Attack Map** — Visual global attack tracking  
+- 🔥 **Threat Score** — Automatic attacker scoring  
+- 🚫 **Auto Blacklist** — Blocks malicious IPs  
+- 💬 **Discord Alerts** — Real-time notifications  
+- 📱 **Telegram Alerts** — Instant alerts  
+- 🖥️ **Web Dashboard** — Live terminal-style UI  
+- 🐳 **Docker Ready** — One-command deployment  
+- 📊 **SQLite DB** — Local storage  
+
+---
+
+## 🚀 Quick Start
+
+### 🐳 Docker (Recommended)
+
+```bash
 git clone https://github.com/ossiqn/honeytrap
 cd honeytrap
 cp .env.example .env
@@ -52,9 +61,6 @@ TELEGRAM_BOT_TOKEN=1234567890:AAxxxxxxxxx
 TELEGRAM_CHAT_ID=-1001234567890
 🪤 Trap Details
 🌐 HTTP Trap (:8080)
-
-Fake endpoints that mimic real services:
-
 /api/login     → Captures credentials, returns fake JWT
 /api/admin     → Fake admin panel
 /api/config    → Fake AWS keys, DB credentials
@@ -85,7 +91,7 @@ Logs download attempts
 🧬 IOC List
 🗺️ Attack Map
 🚫 Blacklist Manager
-🔍 Advanced Filtering
+🔍 Filter by Trap / Severity
 📤 Export as JSON
 🔔 Notification Example (Discord)
 🔴 SSH TRAP — CRITICAL
@@ -99,14 +105,14 @@ Logs download attempts
 👤 Username : root
 🔑 Password : toor123
 🛠️ Tech Stack
-Backend: Python 3.11+
-Web: Flask
-SSH: Paramiko
-Database: SQLite + SQLAlchemy
-GeoIP: ip-api.com
-Notifications: Discord Webhook + Telegram Bot
-Frontend: Vanilla JS + CSS3
-Container: Docker + Docker Compose
+Python 3.11+
+Flask
+Paramiko
+SQLite + SQLAlchemy
+ip-api.com
+Discord Webhook + Telegram Bot
+Vanilla JS + CSS3
+Docker + Docker Compose
 📁 Project Structure
 honeytrap/
 ├── src/
@@ -135,22 +141,20 @@ honeytrap/
 This tool is intended for defensive security research only.
 
 ✅ Allowed:
-
 Systems you own
 Authorized penetration testing
 Threat intelligence research
 Educational use
-
-❌ Not allowed:
-
+❌ Not Allowed:
 Unauthorized deployment on external systems
 
-Unauthorized use may violate cybercrime laws.
+Misuse may violate local and international laws.
 
 👤 Developer
-Name: ossiqn
-Website: ossiqn.com.tr
-GitHub: github.com/ossiqn
+🌐 Website: https://ossiqn.com.tr
+🐙 GitHub: https://github.com/ossiqn
 📜 License
 
 MIT License — © 2024 ossiqn
+
+⭐ If you like this project, consider giving it a star!
